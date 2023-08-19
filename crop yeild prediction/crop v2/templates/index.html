@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Rate of Adsorption</title>
+</head>
+<style>
+
+header,.footer {
+    background-color: rgb(70, 156, 193);
+    padding: auto;
+    padding-left: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 40px;
+    text-align:center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+section {
+    text-align: center;
+}
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    font-weight: bolder ;
+    font-family: 'Times New Roman';
+}
+.form {
+    position: relative;
+    z-index: 1;
+    opacity: 900%;
+    background-color: rgb(155, 234, 250);
+    max-width: 360px;
+    margin: 0 auto 90px;
+    padding: 45px;
+}
+
+.form input {
+    font-family: 'Times New Roman';
+    outline: 1;
+    background: #f6f4f4;
+    width: 90%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.submit {
+    font-size: 150px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+}
+
+</style>
+
+<body>
+    <header>
+        <h1>model to guide framers for better <br>crop yeild</h1>
+    </header>
+    <main>
+        <section>
+            <h1>Prediction of Rate of Crop yeild</h1>
+        </section>
+        <div class="container">
+            <div class="form">
+                <form action="{{url_for('predict')}}" method="POST">
+                    <h3>Crop ID:</h3>
+                    <input type="text" name="time" placeholder="Enter Crop ID" required="required" /><br><br>
+                    <input type="submit" value="predict" class="submit"><br>
+                </form>
+                
+            </div>
+            <div style="color: rgba(255, 0, 17, 0.997);">
+                 <p> <em>YEAR</em> 2020is: {{data1}}</p>
+                 <p> <em>YEAR</em> 2021is: {{data2}}</p>
+                 <p> <em>YEAR</em> 2022is: {{data3}}</p>
+                 <p> <em>YEAR</em> 2023is: {{data4}}</p>
+            </div>
+            </div>
+
+        
+        <div class="footer" style="text-align: left;">
+            <h3>Developed by:</h3>
+            <h5 style="font-family: 'Lucida Sans'"><em>N & L  & S</em></h5>
+            <a href="mailto:naveenkalisetti123@gmail.com">Contact Developer</a><br>
+        </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+S.NO,CROP,CROP ID,soil,wheater ,water resource,crop yeild
+1,WHEAT,22,loamy,cool,1,2.7
+2,BARLEY,32,loamy,hot,1,1.9
+3,POTATO,21,sandy,mild,1,2.8
+4,MUSTRAD,34,sandy,cool,1,1.1
+5,CHICKPEA,99,black,mild,1,1.9
+6,SUNFLOWER,9,black,hot,1,4.4
+7,SWEET COIRN,0,sandy,hot,1,3.4
+8,PUMKIN,98,loamy,cool,1,8.9
+9,PEPPER,77,sandy,mild,1,9.48
+10,ONION,67,black,cool,1,6.3
+11,CARROT,54,sandy,hot,1,0.16
+12,BEANS,34,loamy,cool,1,1.1
+13,BITTER GOURD,21,loamy,mild,1,2.7
+14,BOTTRLE GOURD,64,sandy,mild,1,7.16
+15,BRINJAL,78,black,cool,1,5.7
+16,GREEN CHILLI,91,black,mild,1,1.15
+17,CUCUMBER,23,loamy,cool,1,2.4
+18,SPINACH,88,black,mild,1,1.15
+19,MAIZE ,43,sandy,cool,1,0.7
+20,JOWER,42,sandy,hot,1,0.9
+21,COTTON,76,loamy,hot,1,0.48
+22,RAGI,75,loamy,hot,1,0.48
+23,BAJRA,49,black,cool,1,0.75
+24,SUGARCANE,50,black,mild,1,0.7
+25,JUTE,12,black,mild,1,3.17
+26,RICE,2,black,cool,1,6.9
+27,WHEAT,6,black,mild,1,4.4
+28,MAIZE ,8,loamy,cool,1,4.41
+29,MILLETS,30,loamy,hot,1,1.9
+30,PULES,101,loamy,mild,1,1.99
+31,COTTON,201,sandy,hot,1,2.6
+32,JUTE,202,black,hot,1,2.9
+33,TOBACCO,203,loamy,mild,1,3.4
+34,OIL SEEDS,155,black,hot,1,4.2
+35,TEA,145,loamy,mild,1,9.1
+36,COFFEE,132,sandy,hot,1,4.2
+37,COCONUT,234,black ,hot,1,7.3
+38,RUBBER,345,black,hot,1,0
+39,MOONG,222,sandy,mild,1,8.7
+40,GROUND NUT,343,sandy,mild,1,6.3
+41,SOYABEAN,323,black,cool,1,7.2
+42,URAD,1,loamy,cool,1,4.3
+43,APPLE,3,loamy,mild,1,4.4
+44,PAPPAYA,4,black,mild,1,4.4
+45,GUAVA,5,loamy,hot,1,4.4
+46,BANANA,7,sandy,hot,1,4.41
+47,ORANGE,8,sandy,cool,1,4.41
+48,DRAGON FRUIT,402,sandy,mild,1,9.2
+49,SAPOTA,401,loamy,mild,1,3.1
+50,GRAPS,444,loamy,cool,1,2.9
