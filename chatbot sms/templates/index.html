@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot and Communication App</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Chatbot and Communication App</h1>
+    <div>
+        <h2>Chatbot</h2>
+        <textarea id="chatbox" rows="10" cols="50" disabled></textarea><br>
+        <input type="text" id="user_input" placeholder="Your message"><br>
+        <button id="send_message">Send</button>
+    </div>
+    <div>
+        <h2>SMS</h2>
+        <input type="text" id="to_number" placeholder="Recipient's phone number"><br>
+        <input type="text" id="sms_message" placeholder="SMS message"><br>
+        <button id="send_sms">Send SMS</button>
+    </div>
+    <div>
+        <h2>Email</h2>
+        <input type="text" id="email_subject" placeholder="Email subject"><br>
+        <textarea id="email_message" rows="4" cols="50" placeholder="Email message"></textarea><br>
+        <input type="text" id="recipient_email" placeholder="Recipient's email"><br>
+        <button id="send_email">Send Email</button>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#send_message').click(function () {
+                var user_input = $('#user_input').val();
+                $('#chatbox').val($('#chatbox').val() + 'You: ' + user_input + '\n');
+                $('#user_input').val('');
+                $.post('/get_bot_response', { user_input: user_input }, function (response) {
+                    $('#chatbox').val($('#chatbox').val() + 'Bot: ' + response + '\n');
+                });
+            });
+
+            $('#send_sms').click(function () {
+                var to_number = $('#to_number').val();
+                var sms_message = $('#sms_message').val();
+                $.post('/send_sms', { to_number: to_number, sms_message: sms_message }, function (response) {
+                    alert(response);
+                });
+            });
+
+            $('#send_email').click(function () {
+                var email_subject = $('#email_subject').val();
+                var email_message = $('#email_message').val();
+                var recipient_email = $('#recipient_email').val();
+                $.post('/send_email', { email_subject: email_subject, email_message: email_message, recipient_email: recipient_email }, function (response) {
+                    alert(response);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
